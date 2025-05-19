@@ -68,6 +68,7 @@ SELECT COUNT(*) FROM solana.raw
 ```
 
 For example, I ingested a 1000 blocks:
+
 <img src="images/raw_count.png" alt="Raw Transaction Count" width="300"/>
 
 
