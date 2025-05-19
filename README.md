@@ -6,7 +6,8 @@ This project provides a framework to store and analyze Solana blockchain data. I
 
 ClickHouse is used as the OLAP system to store and analyze the data on
 
-See `/notebooks` for some examples of analysis of the data. The analysis was done on from block `339983000` for a `1000` blocks, using the [Helius](https://www.helius.dev/solana-rpc-nodes) RPC node.
+See `/notebooks` for some examples of analysis of the data. 
+The analysis was done on from block `339983000` for a `1000` blocks, using the [Helius](https://www.helius.dev/solana-rpc-nodes) RPC node.
 
 To categorize a vote transactions, the Solana [is_simple_vote](https://docs.rs/solana-program/2.1.13/src/solana_program/vote/instruction.rs.html#168-180) was used as a reference.
 
@@ -61,7 +62,7 @@ docker-compose down
 
 Run: `pytest tests.py`
 
-## Usage examples
+## Usage Examples
 
 1. Fetch and store block data in `solana.raw`:
 ```bash
@@ -91,7 +92,7 @@ Assuming ClickHouse server is running with `docker-compose`, you can follow thes
 
 `python metrics.py`
 
-3. Use ClickHouse client to query the data as shown in Usage examples
+3. Use ClickHouse client to query the data as shown in usage examples
 
 
 If done correctly, you should see in `solana.block_metrics`, as shown below:
