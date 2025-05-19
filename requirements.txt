@@ -4,4 +4,5 @@ clickhouse-driver==0.2.9
 matplotlib==3.10.3
 pandas==2.2.3
 python-dotenv==1.1.0
+requests==2.32.3
 seaborn==0.13.2

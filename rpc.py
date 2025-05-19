@@ -20,7 +20,7 @@ def main():
     # Initialize BlockRaw with environment variables
     rpc_url = os.getenv("RPC_URL")
     start_block = int(os.getenv("START_BLOCK"))
-    num_blocks = os.getenv("NUM_BLOCKS")
+    num_blocks = int(os.getenv("NUM_BLOCKS"))
     batch_size = int(os.getenv("BATCH_SIZE"))
 
     print("Using RPC:", os.getenv("RPC_URL"))
