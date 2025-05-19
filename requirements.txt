@@ -1,0 +1,7 @@
+base58==2.1.0
+black==25.1.0
+clickhouse-driver==0.2.9
+matplotlib==3.10.3
+pandas==2.2.3
+python-dotenv==1.1.0
+seaborn==0.13.2
