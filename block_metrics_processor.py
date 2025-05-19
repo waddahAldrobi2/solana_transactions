@@ -20,11 +20,11 @@ class BlockMetric:
 class BlockMetricsProcessor:
     def process_block_metrics(self, block_data: dict) -> BlockMetric:
         """Process raw block data and extract relevant metrics.
-        
+
         Args:
             block_data (dict): Raw block data from Solana RPC containing block information
                 and transaction details.
-        
+
         Returns:
             BlockMetric: A BlockMetric object containing processed metrics for the block.
         """
@@ -69,13 +69,13 @@ class BlockMetricsProcessor:
 
     def is_vote_txn(self, transaction: dict) -> bool:
         """Determine if a transaction is a vote transaction.
-        
+
         A vote transaction is identified by checking if it contains any instructions
         that are executed by the vote program and have a vote instruction discriminator.
-        
+
         Args:
             transaction (dict): Transaction data containing message and metadata.
-        
+
         Returns:
             bool: True if the transaction is a vote transaction, False otherwise.
         """
@@ -112,16 +112,16 @@ class BlockMetricsProcessor:
 
     def prepare_metrics_data(self, raw_blocks: list[tuple[int, str]]) -> list[tuple]:
         """Process multiple raw blocks and prepare their metrics for database insertion.
-        
+
         Args:
             raw_blocks (list[tuple[int, str]]): List of tuples containing (block_id, raw_json)
                 where raw_json is the JSON string representation of the block data.
-        
+
         Returns:
             list[tuple]: List of tuples ready for database insertion, where each tuple contains:
                 (block_id, block_timestamp, block_hash, total_txns, total_non_vote_txns,
                 total_vote_txns, total_fees, total_compute)
-        
+
         Note:
             Blocks that fail to process will be logged and skipped.
         """
