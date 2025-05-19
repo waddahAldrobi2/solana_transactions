@@ -72,6 +72,9 @@ class BlockMetricsProcessor:
 
         A vote transaction is identified by checking if it contains any instructions
         that are executed by the vote program and have a vote instruction discriminator.
+        
+        This follows the Solana is_simple_vote.
+        https://docs.rs/solana-program/2.1.13/src/solana_program/vote/instruction.rs.html#168-180 
 
         Args:
             transaction (dict): Transaction data containing message and metadata.
