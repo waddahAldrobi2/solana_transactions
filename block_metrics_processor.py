@@ -7,6 +7,7 @@ from dataclasses import dataclass
 
 @dataclass
 class BlockMetric:
+    """Class for storing block metrics data"""
     block_id: int
     block_timestamp: datetime
     block_hash: str
