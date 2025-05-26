@@ -1,5 +1,9 @@
 # Solana Blocks Analysis
 
+## Main Files
+`rpc.py` : Fetches Solana raw RPC data and writes them to `solana.raw` table
+`metrics.py` : Fetches `solana.raw` data and computes vote and non-vote transaction counts, total fees, and total compute at each block
+
 ## Project overview and approach
 
 This project provides a framework to store and analyze Solana blockchain data. It focuses on analyzing block metrics such as transaction counts, total fees, and total compute.
