@@ -3,7 +3,7 @@
 ## Main Files
 [rpc.py](https://github.com/waddahAldrobi2/solana_transactions/blob/main/rpc.py#L19) : Fetches Solana raw RPC data and writes them to `solana.raw` table
 
-`metrics.py`(https://github.com/waddahAldrobi2/solana_transactions/blob/main/metrics.py#L5) : Fetches `solana.raw` data and computes vote and non-vote transaction counts, total fees, and total compute at each block
+[metrics.py](https://github.com/waddahAldrobi2/solana_transactions/blob/main/metrics.py#L5) : Fetches `solana.raw` data and computes vote and non-vote transaction counts, total fees, and total compute at each block
 
 ## Project overview and approach
 
